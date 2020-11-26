@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Play Game</ion-title>
+    <ion-button size="small" shape ="round" style="float: right" class= "btn" (click)="goStats()">Statistics</ion-button>
+
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-grid>
+
+    <ion-row>
+       <ion-col col-4>
+           <h3>Team A</h3>
+          <h3 class="text">{{count}}</h3>
+
+          <ion-col>
+            <ion-button size="medium" shape ="round" class= "btn" (click)="goCounter()">Goal (+1)</ion-button>
+          </ion-col>
+
+          <ion-col>
+            <ion-button size="medium" shape ="round" class= "btn" (click)="goCounterMinus()">Foul (-1)</ion-button>
+          </ion-col>
+
+         <ion-col>
+            <ion-button size="medium" shape ="round" class= "btn" (click)="goOffTeamA()">OffSide</ion-button>
+          </ion-col>
+        </ion-col>
+
+       <ion-col col-4>
+        <h3>Team A</h3>
+        <h3 class="text">{{counte}}</h3>
+
+        <ion-col>
+          <ion-button size="medium" shape ="round" class= "btn" (click)="goCounta()">Goal (+1)</ion-button>
+        </ion-col>
+
+        <ion-col>
+          <ion-button size="medium" shape ="round" class= "btn" (click)="goCountaMini()">Foul (-1)</ion-button>
+        </ion-col>
+
+       <ion-col>
+          <ion-button size="medium" shape ="round" class= "btn" (click)="goOffTeamB()">OffSide</ion-button>
+        </ion-col>
+
+
+        <div class="boxContainer">
+          <div class="box">
+            <ion-button size="large" shape ="square" class= "submit" (click)="resets()">Reset</ion-button>
+          </div>
+      </div>
+
+     
+ 
+     
+    </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+

@@ -1,0 +1,43 @@
+
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+     Goal Log Counter 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <div class="ion-text-center">
+    <h1>WELCOME</h1>
+  </div>
+  <div id="container">
+  </div>
+
+  <div>
+
+    <p>You are playing:</p>
+    <ion-item>
+      <ion-textarea placeholder="Team A" color="secondary" position= "center"></ion-textarea>
+      <ion-input color="secondary" [(ngModel)]="name" type="text"></ion-input>   
+    </ion-item>
+
+    
+    <br>
+<br>
+<ion-item>
+  <ion-text> VS</ion-text>
+</ion-item>
+<br>
+<br>
+
+    <ion-item>
+      <ion-textarea placeholder="Team B" color="secondary" position= "center"></ion-textarea>
+    </ion-item>
+  </div>
+  <div class="boxContainer">
+    <div class="box">
+      <ion-button size="large" shape ="square" class= "submit" (click)="nextpage()">Save</ion-button>
+    </div>
+</div>
+</ion-content>
